@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgPrimary"
+    android:id="@+id/frl"
+    tools:context="com.vjtechsolution.nex.HomeFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/offlineDataVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="top|right"
+        android:text="Visit Toko : 0"
+        android:background="@drawable/round_btn_dark"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:drawableLeft="@drawable/ic_signal_cellular_off_15"
+        android:drawablePadding="5dp"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/offlineDataAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="top|left"
+        android:text="Tambah Toko : 0"
+        android:background="@drawable/round_btn_dark"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:drawableLeft="@drawable/ic_signal_cellular_off_15"
+        android:drawablePadding="5dp"
+        android:clickable="true" />
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/toko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="bottom|right"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_shadowColor="#444"
+        fab:menu_colorNormal="@color/colorPrimary"
+        fab:menu_colorPressed="@color/colorPrimary"
+        fab:menu_colorRipple="@color/colorPrimaryLight">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floatBtnAddtoko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_location_black_24dp"
+            fab:fab_label="Tambah Toko"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/colorPrimary"
+            fab:fab_colorPressed="@color/colorPrimary"
+            fab:fab_colorRipple="@color/colorPrimaryLight"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floatBtnVisitToko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_near_me_black_24dp"
+            fab:fab_label="Visit Toko"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/colorPrimary"
+            fab:fab_colorPressed="@color/colorPrimary"
+            fab:fab_colorRipple="@color/colorPrimaryLight"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>

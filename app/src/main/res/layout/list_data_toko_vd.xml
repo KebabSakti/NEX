@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgPrimary">
+
+    <LinearLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/list_item_background">
+
+        <TextView
+            android:id="@+id/vd_nama_toko"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textSecondary"
+            android:textColorHint="@color/colorAccent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:hint="Nama Toko"/>
+
+        <TextView
+            android:id="@+id/vd_jml_visit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textSecondary"
+            android:textColorHint="@color/colorAccent"
+            android:background="@color/colorPrimary"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:hint="0"/>
+
+    </LinearLayout>
+
+</LinearLayout>

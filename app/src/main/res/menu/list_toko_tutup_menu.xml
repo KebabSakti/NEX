@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tokoTutup"
+        android:title="Toko Tutup"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_search"
+        appcompat:showAsAction="ifRoom" />
+
+</menu>

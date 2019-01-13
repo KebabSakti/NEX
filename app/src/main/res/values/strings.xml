@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NEX</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="google_maps_key">AIzaSyBVDGaz1RKsAxrrOF-0Xuvj4lfNxSHxmcI</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
